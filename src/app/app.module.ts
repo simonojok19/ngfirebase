@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { AngularFireModule } from '@angular/fire';
-import { AngularFireDatabaseModule, AngularFireDatabase } from '@angular/fire/database';
+import { AngularFireDatabaseModule, AngularFireDatabase} from '@angular/fire/database';
 import { environment } from '../environments/environment';
 import { IndexComponent } from './components/index/index.component';
 import { CreateComponent } from './components/create/create.component';
@@ -20,7 +20,7 @@ import { CreateComponent } from './components/create/create.component';
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireDatabase
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
